@@ -1,68 +1,69 @@
-class Hanhan{
-	//供C#语言调用的一个接口函数
-	function Execute(a){
-		eval(a);
-	}
-	//向屏幕输出字符
-	function puttext(a){
-		print(a);
-	}
-	//读取文件内容并执行
-	function efi(path){
-		var fso = new ActiveXObject("Scripting.FileSystemObject");
-		var ts = fso.OpenTextFile(path,1);
-		Execute(ts.ReadAll());
-		ts.close();
-	}
-	
-	
-	//数组求最大值
-	
-	function upper(a){
-		var q = 0;
-		var w = a(0);
-		while(q < a.length){
-			w = (w >=a[q]) ? w : a[q];
-			q=q+1;
-		}
-		return w;
-	}
-	
-	//数组求最小值
-	
-	function lower(a){
-		var q = 0;
-		var w = a(0);
-		while(q < a.length){
-			w = (w <=a[q]) ? w : a[q];
-			q=q+1;
-		}
-		return w;
-	}
-	
-	function ifel(a,s,d){
-		if(a){
-			Execute(s);
-		}
-		else{
-			Execute(d);
-		}
-	}
-	
-	function wstr(a,s){
-		var i = 0;
-		for(i=0;i<a;i++){
-			Execute(s);
-		}
-	}
-	function wtj(a,s){
-		while(a){
-			Execute(s);
-		}
-	}
-	
-	
+import System;
+class HSJ{
+    var infinity = 1.0/0.0;
+    var obj = new Array();
+    var ar = new Array();
+    function putxt(a,s){
+        for (var index = 0; index < s; index++) {
+            print(a);
+        }
+    }
+    function setitle(a){
+        System.Console.Title = a;
+    }
+    function se(a,s){
+        if (a == 0) {
+            eval("");
+        } else {
+            obj[a] = s;
+        }
+    }
+    function isif(a,s,d) {
+        if (a) {
+            eval(s);
+        } else {
+            eval(d);
+        }
+    }
+    function isfor(a,s) {
+        for (var i = 0; i < s; i++) {
+            eval(a);
+        }
+    }
+    function iswh(a,s){
+        while (a) {
+            eval(s);
+        }
+    }
+    function getInput() {
+        return System.Console.ReadLine();
+    }
+    function exmod(a){
+        eval(a);
+    }
+    function readmod(a){
+        var fso = new ActiveXObject("Scripting.FileSystemObject");
+        var ts = fso.OpenTextFile(a,1);
+        var ret = ts.ReadAll();
+        ts.close();
+        return ret;
+    }
+    function getrnd(a,s){
+        return Math.round(Math.random()*(s-a)+a);
+    }
+    function exit(){
+        Environment.Exit(0);
+    }
+    function gea(a) {
+        var ret = 0;
+        if (a <= 0) {
+            ret = 0;
+        } else{
+            ret = ar[a];
+        }
+        return ret;
+    }
+    function Beep(a,s){
+        System.Console.Beep(a,s);
+    }
 }
-
-
-
