@@ -1,0 +1,6 @@
+se(1,"<div><input id=0 />");
+se(2,"<div><textarea id='0></textarea>");
+isif(gea(1) == "line","putxt(obj[1]+'</div>',1)","");
+isif(gea(1) == "lines","putxt(obj[2]+'</div>',1)","");
+isif(gea(1) != "line" && gea(1) != "lines","exit()","");
+putxt("<div><button onclick='document.getElementById(0).value'>execute</button></div>",1);
