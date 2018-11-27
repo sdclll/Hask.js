@@ -1,8 +1,8 @@
 # Hask.js
 
 #### 项目介绍
-The Derivative Language of JavaScript
-
+The Derivative Language of JavaScript（The folder"SourceCode" is the Script written in JS）
+ 
 
 #### 安装教程
 
