@@ -1,0 +1,2 @@
+isfor("obj[2][i]=Number(obj[2][i])",obj[2].length);     //将id为2的字符串型数组转化成数字型数组
+isfor("obj[4][obj[3]]=obj[2][i];se(3,obj[3]-1);",obj[2].length);//将上一行处理完的数组进行镜像处理，重赋值给id为4的全局变量数组
