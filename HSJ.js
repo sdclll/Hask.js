@@ -66,4 +66,13 @@ class HSJ{
     function Beep(a,s){
         System.Console.Beep(a,s);
     }
+    function xmhtm(name,sty,val,isbo){
+        var ret = "";
+        if (isbo == true) {
+            ret = "<" + name + " " + sty + ">" + val + "</" + name + ">";
+        } else {
+            ret = "<" + name + " " + sty + " />";
+        }
+        return ret;
+    }
 }
